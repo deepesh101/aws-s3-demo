@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>File Uploader</nav>
+    <form id="form">
+        <label for="file">Upload File: </label>
+        <input type="file" id="file" name="file" required />
+        <button type="submit" id="sub-btn">Submit</button>
+        <span id="uploading">Uploading...</span>
+        <span id="uploaded">Uploaded!</span>
+        <span id="failed">Upload Failed! Try again</span>
+    </form>
+    <div class="table-container">
+        <table>
+            <caption><h3>Uploaded Files</h3></caption>
+            <thead>
+                <tr>
+                    <th class="space-1">Sr.No.</th>
+                    <th class="space-3">File</th>
+                    <th class="space-2">Last Modified On</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="no-file" class="space-1">No files found</td>
+                    <td colspan="3" id="loading" class="space-1">Loading files ...</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="js/list-files.js"></script>
+    <script src="js/file-upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+nav {
+    padding: 20px;
+    background-color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+form {
+    padding: 20px
+}
+.table-container {
+    width: 100%;
+    display: flex;
+}
+table {
+    flex: 1;
+    margin: 30px;
+    border-collapse: collapse;
+}
+tr {
+    display: flex;
+}
+.space-1 {
+    flex: 1;
+}
+.space-2 {
+    flex: 2;
+}
+.space-3 {
+    flex: 5;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+#no-file, #loading {
+    text-align: center;
+}
+#failed {
+    color: red;
+}
+#uploaded {
+    color: green;
+}
+#no-file, #uploading, #uploaded, #failed, #loading {
+    display: none;
+}
+#loading, #uploading {
+    animation-name: fadeInOut;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    color: black;
+}
+.link {
+    color: blue;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInOut {
+    0% {
+        color: black;
+    }
+    50% {
+        color: lightgray;
+    }
+    100% {
+        color: black;
+    }
+}
